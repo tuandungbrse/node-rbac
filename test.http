@@ -1,0 +1,23 @@
+GET http://localhost:3000/users HTTP/1.1
+X-ACCESS-TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGYyOTE1OTdlNTkxZjM2YWM1ZmY4NzMiLCJpYXQiOjE2MjY1MDk2NTcsImV4cCI6MTYyNjU5NjA1N30.bZoF0Pe_oZ20zH5iwiQdr2K1aR6IOxY3tpuWo_7-VZE
+###
+
+POST http://localhost:3000/signup HTTP/1.1
+User-Agent: rest-client
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6,zh-CN;q=0.4
+Content-Type: application/x-www-form-urlencoded
+
+email=dungtnt@gmail.com
+&password=password
+&role=admin
+
+###
+
+POST http://localhost:3000/signin HTTP/1.1
+User-Agent: rest-client
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6,zh-CN;q=0.4
+Content-Type: application/x-www-form-urlencoded
+
+email=dungtnt@gmail.com
+&password=password
+&role=admin
